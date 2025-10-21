@@ -40,6 +40,17 @@
     /* codey accent line */
     .accent-line{height:3px;background:linear-gradient(90deg,var(--accent),transparent);border-radius:2px;margin:10px 0 18px}
     footer{border-top:1px solid #202024;color:#a9a9ac}
+    .right-col{display:grid;gap:18px;align-self:start;justify-self:end;width:100%;max-width:680px}
+
+    .right-col{display:grid;gap:18px;align-self:start;justify-self:end;width:100%;max-width:680px}
+
+    html{scroll-behavior:smooth}
+    :root{ --header-h: 64px; }
+    /* ensure hero background doesn't block clicks */
+    .hero::before{ pointer-events:none }
+    /* keep content above any background */
+    header, main, footer{ position:relative; z-index:1 }
+
   </style>
 </head>
 <body>
@@ -48,10 +59,11 @@
       <nav>
         <strong>Vivek Tumma</strong>
         <div class="links">
-          <a href="#core strengths">Core Strengths</a>
+          <a href="#core-strengths">Core Strengths</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
           <a href="#contact" class="btn">Contact</a>
         </div>
       </nav>
@@ -70,10 +82,30 @@
             <a class="btn" href="#projects">See my work</a>
             <a style="margin-left:12px" href="#contact">Email me →</a>
           </div>
-        </div>
-        <div class="card">
+          <div class="card">
+            <h3 style="margin:0">Vision</h3>
+            <div class="accent-line"></div>
+            <ul class="muted">
+              <p class="lede">My goal is to bridge research, automation, and practical defense, building a cybersecurity practice that supports both organizational security posture and individual learning. I continuously engage in bug bounty platforms, PortSwigger labs, and Capture-the-Flag exercises to stay current with new attack surfaces and exploitation techniques.</p>
+            </ul>
+          </div>
+          <div class="card">
           <h3 style="margin:0">Snapshot</h3>
           <div class="accent-line"></div>
+          <ul class="muted">
+            <li>CEH Master · Python/Bash automation</li>
+            <li>Web/API pentesting · SIEM analysis</li>
+            <li>NIST/ISO/GDPR/HIPAA/PCI familiarity</li>
+          </ul>
+          </div>
+        </div></div>
+
+        
+        </div>
+
+        
+        </div>
+    </div>
           <ul class="muted">
             <li>CEH Master · Python/Bash automation</li>
             <li>Web/API pentesting · SIEM analysis</li>
@@ -83,7 +115,7 @@
       </div>
     </section>
 
-    <section id="core strengths" class="reveal">
+    <section id="core-strengths" class="reveal">
       <div class="container">
         <h2 class="section-title">Core Strengths</h2>
         <div class="grid">
@@ -99,7 +131,7 @@
         </div>
       </div>
     </section>
-    
+
     <section id="experience" class="reveal">
       <div class="container">
         <h2 class="section-title">Experience</h2>
@@ -119,17 +151,31 @@
             </ul>
           </div>
         </div>
+
+          <div class="card">
+            <strong>Vivek Cyber Defense LLC — Founder & Security Researcher</strong>
+            <div class="muted">Baltimore, MD · 2025 – Present</div>
+            <div class="accent-line"></div>
+            <ul>
+              <li>Independent cybersecurity research, vulnerability validation, and responsible disclosure through bug bounty programs.</li>
+              <li>Continuous training via CTFs, PortSwigger labs, and lab environments (Windows/AD, Linux).</li>
+              <li>Security documentation and write‑ups focused on reproducible steps and practical remediation.</li>
+              <li>Alignment to OWASP and NIST best practices for reporting and guidance.</li>
+            </ul>
+          </div>
+
       </div>
     </section>
 
+    
     <section id="projects" class="reveal">
       <div class="container">
         <h2 class="section-title">Projects</h2>
-        <p class="muted">A few highlights (more incoming).</p>
+        <p class="muted">A selection of hands-on work and academic projects.</p>
         <div class="grid grid-3" style="margin-top:10px">
           <div class="card">
             <strong>MOVEit 2023 Vulnerability Analysis</strong>
-            <p class="muted">Technical + procedural weaknesses, interdependencies, and mitigations; presented with repro flow and secure config checklist.</p>
+            <p class="muted">Analyzed technical/procedural weaknesses, interdependencies, and mitigations; documented a reproducible flow and secure config checklist.</p>
           </div>
           <div class="card">
             <strong>Burp Suite Deep Dive</strong>
@@ -139,9 +185,22 @@
             <strong>CTF & Lab Write-ups</strong>
             <p class="muted">Selected notes from PortSwigger labs and multi-host pivoting exercises in AD environments.</p>
           </div>
+          <div class="card">
+            <strong>UMBC Cyber Practitioner Labs</strong>
+            <p class="muted">11 labs + 2 projects: traffic analysis, vuln scanning (Nmap/Nessus), exploitation (MS08‑067), password cracking, and OSINT (Maltego, Recon‑ng, Spiderfoot).</p>
+          </div>
+          <div class="card">
+            <strong>Digital Forensics & IR Simulations</strong>
+            <p class="muted">Incident simulations with IOC creation and malware log analysis; network, memory, and mobile device forensics.</p>
+          </div>
+          <div class="card">
+            <strong>Risk, Compliance & DRP</strong>
+            <p class="muted">Threat/risk assessments, GDPR case work, and a Disaster Recovery Plan (Lightning Strike) with team coordination and documentation.</p>
+          </div>
         </div>
       </div>
     </section>
+</section>
 
     <section id="skills" class="reveal">
       <div class="container">
@@ -150,32 +209,77 @@
         <div id="skills-cloud" class="card"></div>
       </div>
     </section>
+    <section id="education" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>University of Maryland, Baltimore County (UMBC)</strong>
+            <div class="muted">M.S. in Cybersecurity</div>
+          </div>
+          <div class="card">
+            <strong>Sardar Patel College, Hyderabad</strong>
+            <div class="muted">B.Com in Computer Applications</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="reveal">
-      <div class="container grid grid-3">
-        <div class="card">
-          <h3>Certifications</h3>
-          <div class="accent-line"></div>
-          <div class="chip">CEH Master</div>
-          <div class="chip">(Planning) Security +</div>
-        </div>
-        <div class="card">
-          <h3>Domains</h3>
-          <div class="accent-line"></div>
-          <div class="chip">SOC/IR</div>
-          <div class="chip">Pentesting</div>
-          <div class="chip">Vuln Mgmt</div>
-          <div class="chip">Forensics</div>
-          <div class="chip">Compliance</div>
-        </div>
-        <div class="card">
-          <h3>Contact</h3>
-          <div class="accent-line"></div>
+
+    <section id="contact" class="reveal">
+
+      <div class="container" style="max-width:880px">
+        <h2 class="section-title">Contact</h2>
+        <p class="muted">Recruiters and collaborators — send me a note. I typically reply within 24–48 hours.</p>
+        <form id="contactForm" action="https://formsubmit.co/vivektumma27@gmail.com" method="POST" class="card" style="display:grid;gap:12px;margin-top:12px">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_subject" value="New message from your portfolio site">
+          <input type="hidden" name="subject" value="Portfolio contact form" />
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+            <div class="grid" style="gap:6px">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="grid" style="gap:6px">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+          </div>
+          <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+            <div class="grid" style="gap:6px">
+              <label for="reason">Reason to contact</label>
+              <select id="reason" name="reason">
+                <option>Interview</option>
+                <option>Freelance engagement</option>
+                <option>Bug bounty / Security review</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="grid" style="gap:6px">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" placeholder="(optional)">
+            </div>
+          </div>
+          <div class="grid" style="gap:6px">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="grid" style="grid-template-columns:1fr auto;align-items:center;gap:10px">
+            <small id="formStatus" class="muted"></small>
+            <button class="btn" type="submit">Send message</button>
+          </div>
+        </form>
+        <div class="card" style="margin-top:12px">
+          <p class="muted"><strong>Vivek Harsha Vardhan Tumma</strong></p>
+          <p class="muted"><strong>Vivek Cyber Defense LLC — Founder</strong></p>
+          <p class="muted">LLC Portfolio: Vivek Cyber Defense LLC — <a href="https://vivektumma.github.io/vivekcyberdefense/" target="_blank">Visit Site</a></p>
           <p class="muted">Email: <a href="mailto:vivektumma27@gmail.com">vivektumma27@gmail.com</a></p>
           <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/vivek-tumma-179997290/" target="_blank">Vivek Tumma</a></p>
           <p class="muted">Baltimore, MD · Open to relocate</p>
         </div>
       </div>
+
     </section>
   </main>
 
@@ -199,14 +303,17 @@
     async function bootPy(){
       const pyodide = await loadPyodide();
       await pyodide.runPythonAsync(`
+
 skills = {
-  'SIEM': ['QRadar','Splunk','Sysmon','Snort'],
-  'Pentesting': ['Burp Suite','OWASP ZAP','Metasploit','Hydra','Wpscan','Nmap','Nessus','Qualys','OpenVAS'],
-  'Domains': ['OWASP Top 10','Incident Response','Threat Detection','Active Directory Exploitation','Forensics'],
-  'Scripting & OS': ['Python','Bash','PowerShell','Linux','Windows']
+  'SIEM': ['QRadar','Splunk','Wireshark','Snort','KFSensor','Sysmon','Windows Firewall'],
+  'Pentesting': ['Nmap','Nessus','OpenVAS','Nexpose','Qualys','Burp Suite','OWASP ZAP','Hydra','Medusa','Metasploit','Armitage','Nikto','Wpscan','Dirb'],
+  'Defensive & Governance': ['Incident Response','Threat Detection','OWASP Top 10','Active Directory Exploitation','Network Security','Compliance (NIST, ISO 27001, HIPAA, GDPR, PCI-DSS, SOX)'],
+  'Forensics & Malware': ['Disk Forensics','Memory Forensics','Mobile Device Forensics','Registry Forensics','Browser Forensics','Malware Analysis (Static & Dynamic, IOCs, YARA)'],
+  'Scripting & OS': ['Python','Bash','PowerShell','Linux (Ubuntu, Debian, Kali)','Windows (Server, AD)','AWS (basic)','Azure (basic)']
 }
 html = []
 for cat, items in skills.items():
+    items = list(dict.fromkeys(items))  # de-duplicate while preserving order
     chips = ''.join([f"<span class='chip'>{i}</span>" for i in items])
     html.append(f"<div style='margin-bottom:10px'><strong>{cat}</strong><div style='margin-top:6px'>{chips}</div></div>")
 from js import document
@@ -216,5 +323,46 @@ container.innerHTML = "".join(html)
     }
     bootPy();
   </script>
+
+<script>
+  (function(){
+    const HEADER_OFFSET = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h').replace('px','')) || 64;
+    function scrollToHash(hash){
+      const el = document.querySelector(hash);
+      if(!el) return;
+      const y = el.getBoundingClientRect().top + window.pageYOffset - HEADER_OFFSET;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+    // Intercept in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const hash = a.getAttribute('href');
+        if(hash && hash.length>1){
+          e.preventDefault();
+          history.pushState(null, '', hash);
+          scrollToHash(hash);
+        }
+      });
+    });
+    // If page loads with a hash (e.g., /#skills), adjust
+    if(location.hash && document.querySelector(location.hash)){
+      setTimeout(()=>scrollToHash(location.hash), 0);
+    }
+  })();
+</script>
+
+
+<script>
+  (function(){
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    if(!form || !status) return;
+    form.addEventListener('submit', function(){
+      status.textContent = 'Sending…';
+      setTimeout(()=>{ if(status.textContent==='Sending…'){ status.textContent = 'If you do not see a success page, please email me directly.'; } }, 6000);
+    });
+  })();
+</script>
+
 </body>
 </html>
