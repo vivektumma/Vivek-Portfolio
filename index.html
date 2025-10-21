@@ -42,8 +42,6 @@
     footer{border-top:1px solid #202024;color:#a9a9ac}
     .right-col{display:grid;gap:18px;align-self:start;justify-self:end;width:100%;max-width:680px}
 
-    .right-col{display:grid;gap:18px;align-self:start;justify-self:end;width:100%;max-width:680px}
-
     html{scroll-behavior:smooth}
     :root{ --header-h: 64px; }
     /* ensure hero background doesn't block clicks */
@@ -72,35 +70,40 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <span class="tag">Cybersecurity · SOC · Pentesting</span>
-          <h1>Hi, I'm Vivek — I assess, exploit, and help fix real security risks.</h1>
-          <p class="lede">I’m a Cybersecurity Analyst & Penetration Tester with hands-on experience across SOC operations, vulnerability management, and offensive security testing. My professional background bridges both the red team and blue team sides — from analyzing real-time threats and automating detection in SIEM tools, to exploiting and reporting vulnerabilities in complex enterprise environments.</p>
-          <p class="lede">I’ve worked extensively with IBM QRadar, Splunk, Nessus, Burp Suite, Metasploit, and other industry-standard tools to detect, exploit, and mitigate security flaws. My approach combines practical lab work, structured methodologies like OWASP Top 10 and NIST CSF, and a strong foundation in compliance frameworks such as ISO 27001, HIPAA, GDPR, and PCI-DSS.</p>
-          <div style="margin-top:14px">
-            <a class="btn" href="#projects">See my work</a>
-            <a style="margin-left:12px" href="#contact">Email me →</a>
-          </div>
-          <div class="card">
-            <h3 style="margin:0">Vision</h3>
-            <div class="accent-line"></div>
-            <ul class="muted">
-              <p class="lede">My goal is to bridge research, automation, and practical defense, building a cybersecurity practice that supports both organizational security posture and individual learning. I continuously engage in bug bounty platforms, PortSwigger labs, and Capture-the-Flag exercises to stay current with new attack surfaces and exploitation techniques.</p>
-            </ul>
-          </div>
-          <div class="card">
-          <h3 style="margin:0">Snapshot</h3>
-          <div class="accent-line"></div>
-          <ul class="muted">
-            <li>CEH Master · Python/Bash automation</li>
-            <li>Web/API pentesting · SIEM analysis</li>
-            <li>NIST/ISO/GDPR/HIPAA/PCI familiarity</li>
-          </ul>
-          </div>
-        </div>
+  <div class="container hero-inner">
+    <!-- Left column: heading, copy, CTAs -->
+    <div>
+      <span class="tag">Cybersecurity · SOC · Pentesting</span>
+      <h1>Hi, I'm Vivek — I assess, exploit, and help fix real security risks.</h1>
+      <p class="lede">I’m a Cybersecurity Analyst & Penetration Tester with hands-on experience across SOC operations, vulnerability management, and offensive security testing. My professional background bridges both the red team and blue team sides — from analyzing real-time threats and automating detection in SIEM tools, to exploiting and reporting vulnerabilities in complex enterprise environments.</p>
+      <p class="lede">I’ve worked extensively with IBM QRadar, Splunk, Nessus, Burp Suite, Metasploit, and other industry-standard tools to detect, exploit, and mitigate security flaws. My approach combines practical lab work, structured methodologies like OWASP Top 10 and NIST CSF, and a strong foundation in compliance frameworks such as ISO 27001, HIPAA, GDPR, and PCI-DSS.</p>
+      <div style="margin-top:14px">
+        <a class="btn" href="#projects">See my work</a>
+        <a style="margin-left:12px" href="#contact">Email me →</a>
       </div>
-    </section>
+    </div>
+
+    <!-- Right column: Vision (top) + Snapshot (bottom) -->
+    <aside class="right-col">
+      <div class="card">
+        <h3 style="margin:0">Vision</h3>
+        <div class="accent-line"></div>
+        <p class="muted">My goal is to bridge research, automation, and practical defense, building a cybersecurity practice that supports both organizational security posture and individual learning. I continuously engage in bug bounty platforms, PortSwigger labs, and Capture-the-Flag exercises to stay current with new attack surfaces and exploitation techniques.</p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin:0">Snapshot</h3>
+        <div class="accent-line"></div>
+        <ul class="muted" style="margin:0;padding-left:18px">
+          <li>CEH Master · Python/Bash automation</li>
+          <li>Web/API pentesting · SIEM analysis</li>
+          <li>NIST/ISO/GDPR/HIPAA/PCI familiarity</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
 
     <section id="core-strengths" class="reveal">
       <div class="container">
