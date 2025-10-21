@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivek Tumma · Cybersecurity Portfolio</title>
+  <meta name="description" content="Portfolio of Vivek Harsha Vardhan Tumma — cybersecurity analyst & penetration tester. Projects, experience, skills, and contact." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <style>
+    :root{
+      --bg:#0b0b0c; --panel:#121214; --card:#17171a; --text:#f1f1f1; --muted:#a6a6a9; --accent:#00ffae; --accent-2:#3efccc;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.7);backdrop-filter:blur(10px);border-bottom:1px solid #202023}
+    nav{display:flex;justify-content:space-between;align-items:center;height:64px}
+    nav .links a{margin-left:16px;color:#d8d8da}
+    nav .links a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#000;font-weight:700;padding:10px 14px;border-radius:10px;box-shadow:0 10px 30px rgba(0,255,174,.25)}
+    .hero{position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:-20%;background:radial-gradient(700px 300px at 0% 0%, rgba(0,255,174,.08), transparent),radial-gradient(600px 400px at 100% 10%, rgba(0,255,174,.06), transparent);filter:blur(2px)}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:60px 0}
+    @media (max-width:900px){.hero-inner{grid-template-columns:1fr;padding:36px 0}}
+    h1{font-size:clamp(30px,4vw,48px);line-height:1.05;margin:6px 0 10px}
+    .lede{color:#cfcfd2;max-width:60ch}
+    .tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #212125;padding:6px 10px;border-radius:999px;background:#101012;color:#c8c8cb}
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    @media (max-width:900px){.grid-3{grid-template-columns:1fr}}
+    section{padding:54px 0}
+    .section-title{font-size:28px;margin:0 0 8px}
+    .card{background:var(--card);border:1px solid #202024;border-radius:14px;padding:18px}
+    .muted{color:var(--muted)}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:#101014;border:1px solid #232327;color:#d8d8da;margin:4px 6px 0 0}
+    /* subtle entrance animations */
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .7s ease, transform .7s ease}
+    .reveal.show{opacity:1;transform:translateY(0)}
+    /* codey accent line */
+    .accent-line{height:3px;background:linear-gradient(90deg,var(--accent),transparent);border-radius:2px;margin:10px 0 18px}
+    footer{border-top:1px solid #202024;color:#a9a9ac}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <strong>Vivek Tumma</strong>
+        <div class="links">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="tag">Cybersecurity · SOC · Pentesting</span>
+          <h1>Hi, I'm Vivek — I assess, exploit, and help fix real security risks.</h1>
+          <p class="lede">Hands-on with QRadar, Splunk, Nessus, Burp Suite, Metasploit; experienced across incident response, vulnerability assessment, and OWASP Top 10 testing. I build clear, actionable reports teams can implement fast.</p>
+          <div style="margin-top:14px">
+            <a class="btn" href="#projects">See my work</a>
+            <a style="margin-left:12px" href="#contact">Email me →</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="margin:0">Snapshot</h3>
+          <div class="accent-line"></div>
+          <ul class="muted">
+            <li>CEH Master · Python/Bash automation</li>
+            <li>Web/API pentesting · SIEM analysis</li>
+            <li>NIST/ISO/GDPR/HIPAA/PCI familiarity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <p class="muted">Recent, relevant, and hands-on.</p>
+        <div class="grid">
+          <div class="card">
+            <strong>Cybersecurity Intern — Hacker School (Cartel Software Pvt. Ltd.)</strong>
+            <div class="muted">Hyderabad, India · Jan 2022 – Dec 2022</div>
+            <div class="accent-line"></div>
+            <ul>
+              <li>Performed SOC analyst functions with QRadar & Splunk; correlation rules and anomaly detection.</li>
+              <li>End-to-end pentesting in lab: Linux/Windows/AD, pivoting, Kerberoasting, and MS08-067.</li>
+              <li>Ran vulnerability assessments (Nessus, OpenVAS, Nexpose, Qualys) with remediation guidance.</li>
+              <li>Built/tuned Snort IDS rules, deployed honeypots, configured firewalls.</li>
+              <li>Tested web/mobile apps for OWASP Top 10 using Burp Suite & ZAP; investigated phishing/malware with IOC extraction.</li>
+              <li>Automated scans & reporting via Python/Bash to reduce analyst time.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">A few highlights (more incoming).</p>
+        <div class="grid grid-3" style="margin-top:10px">
+          <div class="card">
+            <strong>MOVEit 2023 Vulnerability Analysis</strong>
+            <p class="muted">Technical + procedural weaknesses, interdependencies, and mitigations; presented with repro flow and secure config checklist.</p>
+          </div>
+          <div class="card">
+            <strong>Burp Suite Deep Dive</strong>
+            <p class="muted">Tool comparison & usage notes; repeatable checklist for auth, injection, and IDOR testing paths.</p>
+          </div>
+          <div class="card">
+            <strong>CTF & Lab Write-ups</strong>
+            <p class="muted">Selected notes from PortSwigger labs and multi-host pivoting exercises in AD environments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <div class="container">
+        <h2 class="section-title">Skills & Tools</h2>
+        <p class="muted">Rendered live with Python (Pyodide) below.</p>
+        <div id="skills-cloud" class="card"></div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="container grid grid-3">
+        <div class="card">
+          <h3>Certifications</h3>
+          <div class="accent-line"></div>
+          <div class="chip">CEH Master</div>
+          <div class="chip">(Planning) OSCP</div>
+          <div class="chip">(Planning) CISSP</div>
+        </div>
+        <div class="card">
+          <h3>Domains</h3>
+          <div class="accent-line"></div>
+          <div class="chip">SOC/IR</div>
+          <div class="chip">Pentesting</div>
+          <div class="chip">Vuln Mgmt</div>
+          <div class="chip">Forensics</div>
+          <div class="chip">Compliance</div>
+        </div>
+        <div class="card">
+          <h3>Contact</h3>
+          <div class="accent-line"></div>
+          <p class="muted">Email: <a href="mailto:vivektumma27@gmail.com">vivektumma27@gmail.com</a></p>
+          <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/vivek-tumma-179997290/" target="_blank">/in/vivek-tumma-179997290</a></p>
+          <p class="muted">Baltimore, MD · Open to relocate</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;padding:18px 0;flex-wrap:wrap;gap:10px">
+      <div>© <span id="y"></span> Vivek Tumma</div>
+      <div class="muted">Built with HTML + JS + Python (Pyodide)</div>
+    </div>
+  </footer>
+
+  <!-- IntersectionObserver for reveal animations -->
+  <script>
+    const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target);}})},{threshold:.15});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+    document.getElementById('y').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Pyodide to render skills dynamically with Python -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.1/full/pyodide.js"></script>
+  <script>
+    async function bootPy(){
+      const pyodide = await loadPyodide();
+      await pyodide.runPythonAsync(`
+skills = {
+  'SIEM': ['QRadar','Splunk','Sysmon','Snort'],
+  'Pentesting': ['Burp Suite','OWASP ZAP','Metasploit','Hydra','Wpscan','Nmap','Nessus','Qualys','OpenVAS'],
+  'Domains': ['OWASP Top 10','Incident Response','Threat Detection','Active Directory Exploitation','Forensics'],
+  'Scripting & OS': ['Python','Bash','PowerShell','Linux','Windows']
+}
+html = []
+for cat, items in skills.items():
+    chips = ''.join([f"<span class='chip'>{i}</span>" for i in items])
+    html.append(f"<div style='margin-bottom:10px'><strong>{cat}</strong><div style='margin-top:6px'>{chips}</div></div>")
+from js import document
+container = document.getElementById('skills-cloud')
+container.innerHTML = "".join(html)
+`);
+    }
+    bootPy();
+  </script>
+</body>
+</html>
